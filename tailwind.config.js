@@ -1,9 +1,17 @@
-/** @type {import('tailwindcss').Config} */
 module.exports = {
-  // NOTE: Update this to include the paths to all of your component files.
-  content: ["./App.{js,jsx,ts,tsx}", "./components/**/*.{js,jsx,ts,tsx}"],
+  content: [
+    "./app/**/*.{js,jsx,ts,tsx}",
+  ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        amber: {
+          500: '#f59e0b', // Gold/yellow color
+          600: '#d97706', // Darker gold
+          200: '#fde68a', // Lighter gold for indicators
+        },
+      },
+    },
   },
   plugins: [],
-}
+};
